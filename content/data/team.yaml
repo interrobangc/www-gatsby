@@ -1,0 +1,41 @@
+- name: Milo Schuman
+  title: Senior Full Stack Developer
+  img: https://media.interrobang.consulting/team/milo.jpg
+  github: miloschuman
+  linkedin: milo-schuman-9940961
+  facebook:
+
+- name: Robert Bo Davis
+  title: Founder & CTO
+  img: https://media.interrobang.consulting/team/bo.jpg
+  github: robert-bo-davis
+  linkedin: robert-bo-davis
+  facebook:
+
+- name: Brendan Murphy
+  title: Junior Full Stack Developer
+  img: https://media.interrobang.consulting/team/brendan.jpg
+  github: brendan-mur
+  linkedin: brendan-murphy-959849159
+  facebook:
+
+- name: Matt Evanoff
+  title: Front End Consultant
+  img: https://media.interrobang.consulting/team/matt.evanoff.jpg
+  github: theintrnet
+  linkedin: mattevanoff
+  facebook:
+
+- name: Posha
+  title: Founder & CEO
+  img: https://media.interrobang.consulting/team/posha.jpg
+  github:
+  linkedin:
+  facebook: poshin.tang
+
+- name: Matt Davis
+  title: Enterprise Consultant
+  img: https://media.interrobang.consulting/team/matt.davis.jpg
+  github: mrjmd
+  linkedin: mrjmd
+  facebook:

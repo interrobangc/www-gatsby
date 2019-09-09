@@ -1,0 +1,36 @@
+@import "variables";
+@import "mixins";
+@import "navbar";
+@import "masthead";
+@import "cto";
+@import "services";
+@import "team";
+
+html {
+  padding: 0;
+  margin: 0;
+  @include body-font;
+}
+
+body {
+  @include body-font;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+.flexbox {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.center-items {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
