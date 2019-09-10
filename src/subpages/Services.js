@@ -32,17 +32,17 @@ function Services() {
           </div>
         </div>
         <div className="row my-4">
-              {allServicesYaml.edges.map(({ node }) => {
-                return (
-                  <IconItem
-                    key={node.title}
-                    title={node.title}
-                    icon={node.icon}
-                    description={node.description}
-                  />
-                )
-              })}
-            </div>
+          {allServicesYaml.edges.map(({ node }) => {
+            return (
+              <IconItem
+                key={node.title}
+                title={node.title}
+                icon={node.icon}
+                description={node.description}
+              />
+            )
+          })}
+        </div>
       </div>
     </section>
   )
