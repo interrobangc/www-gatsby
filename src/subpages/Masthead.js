@@ -1,5 +1,4 @@
 import React from "react"
-import Navbar from "../components/Navbar"
 import { useStaticQuery, graphql } from "gatsby"
 
 function Masthead() {
@@ -16,7 +15,6 @@ function Masthead() {
 
   return (
     <header className="masthead">
-      <Navbar />
       <div className="container">
         <div className="intro-text">
           <div className="intro-lead-in">{welcomeText}</div>

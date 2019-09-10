@@ -1,13 +1,12 @@
 import React from "react"
-import { SocialIcon as ReactSocialIcon } from "react-social-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-function SocialIcon({ site, className, username }) {
+function SocialIcon({ site, username }) {
   if (username) {
     return (
-      <ReactSocialIcon
-        className={className}
-        url={`http://${site}.com/${username}`}
-      />
+      <a href={`http://${site}.com/${username}`}>
+        <FontAwesomeIcon icon={["fab", site]} size="lg" />
+      </a>
     )
   }
   return null
