@@ -1,7 +1,6 @@
 // Styling for the masthead
 header.masthead {
   @include background-cover;
-  text-align: center;
   color: $white;
   background-image: url("https://media.interrobang.consulting/header-bg.jpg");
   background-repeat: no-repeat;

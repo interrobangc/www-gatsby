@@ -20,9 +20,9 @@ function Cto() {
     <section id="cto">
       <div className="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 className="section-heading text-uppercase">Fractional CTO</h2>
-            <h3 className="section-subheading text-muted text-center">
+          <div class="col-lg-8 mx-auto">
+            <h2 className="section-heading">Fractional CTO</h2>
+            <h3 className="section-subheading text-muted">
               We provide fractional CTO services that come with the support of
               an existing team. This allows us to make progress toward your
               goals with minimal ramp up time. Our team can take your startup
@@ -30,7 +30,7 @@ function Cto() {
             </h3>
           </div>
         </div>
-        <div className="row my-4">
+        <div className="row mx-auto">
           {allCtoYaml.edges.map(({ node }) => {
             return (
               <IconItem

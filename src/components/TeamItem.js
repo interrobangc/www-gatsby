@@ -5,8 +5,8 @@ import Bounce from "react-reveal/Fade"
 function TeamItem({ name, title, img, github, linkedin, facebook }) {
   return (
     <Bounce right>
-      <div className="col-sm-4">
-        <div className="team-member">
+      <div className="col-md-4">
+        <div className="teamItem">
           <img src={img} className="mx-auto rounded-circle" alt={`${name}`} />
           <h4 className="mt-4">{name}</h4>
           <p className="text-muted">{title}</p>

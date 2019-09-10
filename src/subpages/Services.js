@@ -20,18 +20,18 @@ function Services() {
     <section id="services">
       <div className="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 className="section-heading text-uppercase">
+          <div class="col-lg-8 mx-auto">
+            <h2 className="section-heading text-uppercase">
               Technical Services
-            </h1>
-            <h3 className="section-subheading text-muted text-center">
+            </h2>
+            <h3 className="section-subheading text-muted">
               We design software, processes, and infrastructures that get out of
               the way and let empowered developers and system engineers do what
               they do best.
             </h3>
           </div>
         </div>
-        <div className="row my-4">
+        <div className="row mx-auto">
           {allServicesYaml.edges.map(({ node }) => {
             return (
               <IconItem
