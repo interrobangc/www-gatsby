@@ -9,7 +9,6 @@ function getUrl(site, username) {
       return `https://github.com/${username}`
     case "linkedin":
       return `https://www.linkedin.com/in/${username}`
-      break
     default:
       return null
   }
