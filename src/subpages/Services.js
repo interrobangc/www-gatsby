@@ -19,8 +19,8 @@ function Services() {
   return (
     <section id="services">
       <div className="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
+        <div className="row">
+          <div className="col-lg-8 mx-auto">
             <h2 className="section-heading text-uppercase">
               Technical Services
             </h2>

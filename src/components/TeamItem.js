@@ -1,13 +1,18 @@
 import React from "react"
-import SocialIcon from "./SocialIcon"
 import Bounce from "react-reveal/Fade"
+import Img from "gatsby-image"
+import SocialIcon from "./SocialIcon"
 
-function TeamItem({ name, title, img, github, linkedin, facebook }) {
+function TeamItem({ name, title, image, github, linkedin, facebook }) {
   return (
     <Bounce right>
       <div className="col-md-4">
         <div className="teamItem">
-          <img src={img} className="mx-auto rounded-circle" alt={`${name}`} />
+          <Img
+            className="mx-auto rounded-circle teamItemImage"
+            fluid={image.childImageSharp.fluid}
+            alt={name}
+          />
           <h4 className="mt-4">{name}</h4>
           <p className="text-muted">{title}</p>
           <ul className="list-inline social-buttons">

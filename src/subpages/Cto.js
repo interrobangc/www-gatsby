@@ -19,8 +19,8 @@ function Cto() {
   return (
     <section id="cto">
       <div className="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
+        <div className="row">
+          <div className="col-lg-8 mx-auto">
             <h2 className="section-heading">Fractional CTO</h2>
             <h3 className="section-subheading text-muted">
               We provide fractional CTO services that come with the support of

@@ -10,7 +10,13 @@ function Team() {
           node {
             name
             title
-            img
+            image {
+              childImageSharp {
+                fluid(maxWidth: 225) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             github
             linkedin
             facebook
@@ -36,7 +42,7 @@ function Team() {
                 key={node.name}
                 name={node.name}
                 title={node.title}
-                img={node.img}
+                image={node.image}
                 github={node.github}
                 linkedin={node.linkedin}
                 facebook={node.facebook}
