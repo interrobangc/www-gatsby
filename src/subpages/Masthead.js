@@ -3,12 +3,12 @@ import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 function Masthead() {
-  const { pageDataYaml } = useStaticQuery(graphql`
+  const { mastheadYaml } = useStaticQuery(graphql`
     {
-      pageDataYaml {
-        welcomeText
-        landingText
-        headerImage {
+      mastheadYaml {
+        scriptText
+        capsText
+        image {
           childImageSharp {
             fluid(maxWidth: 1000, maxHeight: 1500) {
               ...GatsbyImageSharpFluid
@@ -19,19 +19,19 @@ function Masthead() {
     }
   `)
 
-  const { welcomeText, landingText, headerImage } = pageDataYaml
+  const { scriptText, capsText, image } = mastheadYaml
 
   return (
     <BackgroundImage
       Tag="header"
       className="masthead"
-      fluid={headerImage.childImageSharp.fluid}
+      fluid={image.childImageSharp.fluid}
       backgroundColor={`#040e18`}
     >
       <div className="container">
         <div className="intro-text">
-          <div className="intro-lead-in">{welcomeText}</div>
-          <div className="intro-heading text-uppercase">{landingText}</div>
+          <div className="intro-lead-in">{scriptText}</div>
+          <div className="intro-heading text-uppercase">{capsText}</div>
         </div>
       </div>
     </BackgroundImage>
