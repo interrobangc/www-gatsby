@@ -21,9 +21,7 @@ function Services() {
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            <h2 className="section-heading text-uppercase">
-              Technical Services
-            </h2>
+            <h2 className="section-heading">Technical Services</h2>
             <h3 className="section-subheading text-muted">
               We design software, processes, and infrastructures that get out of
               the way and let empowered developers and system engineers do what
@@ -32,10 +30,10 @@ function Services() {
           </div>
         </div>
         <div className="row mx-auto">
-          {allServicesYaml.edges.map(({ node }) => {
+          {allServicesYaml.edges.map(({ node }, index) => {
             return (
               <IconItem
-                key={node.title}
+                key={index}
                 title={node.title}
                 icon={node.icon}
                 description={node.description}

@@ -1,10 +1,9 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import SocialIcon from "../components/SocialIcon"
 
 function Footer() {
   return (
-    <footer className="bg-light container-fluid">
+    <footer className="bg-light">
       <div className="container">
         <div className="row">
           <div className="col-md-6">
@@ -12,14 +11,15 @@ function Footer() {
               Copyright &copy; Interrobang Consulting 2019
             </span>
           </div>
-          <div className="col-md-6 text-right">
+          <div className="col-md-6">
             <ul className="list-inline social-buttons">
-              <li className="list-inline-item text-center">
-                <a href="mailto:info@interrobang.consulting">
-                  <FontAwesomeIcon icon="envelope" size="lg" />
-                </a>
+              <li className="list-inline-item">
+                <SocialIcon
+                  site="email"
+                  username="info@interrobang.consulting"
+                />
               </li>
-              <li className="list-inline-item text-center">
+              <li className="list-inline-item">
                 <SocialIcon site="github" username="interrobangc" />
               </li>
             </ul>

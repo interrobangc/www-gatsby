@@ -31,10 +31,11 @@ function Cto() {
           </div>
         </div>
         <div className="row mx-auto">
-          {allCtoYaml.edges.map(({ node }) => {
+          {allCtoYaml.edges.map(({ node }, index) => {
             return (
               <IconItem
-                key={node.title}
+                key={index}
+                index={index}
                 title={node.title}
                 icon={node.icon}
                 description={node.description}

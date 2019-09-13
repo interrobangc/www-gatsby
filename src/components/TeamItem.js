@@ -1,5 +1,5 @@
 import React from "react"
-import Bounce from "react-reveal/Fade"
+import Bounce from "react-reveal/Bounce"
 import Img from "gatsby-image"
 import SocialIcon from "./SocialIcon"
 
