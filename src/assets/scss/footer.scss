@@ -1,11 +1,15 @@
 // Styling for the footer
 footer {
-  padding: 25px 0;
+  padding: 10px 0;
 
   span.copyright {
     @include heading-font;
     font-size: 90%;
     line-height: 40px;
     text-transform: none;
+  }
+
+  .social-buttons {
+    text-align: right;
   }
 }

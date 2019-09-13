@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function getUrl(site, username) {
   switch (site) {
+    case "email":
+      return `mailto:${username}`
     case "facebook":
       return `https://facebook.com/${username}`
     case "github":
@@ -14,11 +16,18 @@ function getUrl(site, username) {
   }
 }
 
+function getIcon(site) {
+  if (site === "email") {
+    return "envelope"
+  }
+  return ["fab", site]
+}
+
 function SocialIcon({ site, username }) {
   if (username) {
     return (
-      <a href={getUrl(site, username)}>
-        <FontAwesomeIcon icon={["fab", site]} size="lg" />
+      <a href={getUrl(site, username)} className="text-center">
+        <FontAwesomeIcon icon={getIcon(site)} size="lg" />
       </a>
     )
   }
