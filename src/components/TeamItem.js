@@ -4,7 +4,7 @@ import SocialIcon from "./SocialIcon"
 
 function TeamItem({ name, title, image, github, linkedin, facebook }) {
   return (
-    <div className="col-md-4">
+    <div className="col-sm-6 col-md-4">
       <div className="teamItem">
         <Img
           className="mx-auto rounded-circle teamItemImage"
