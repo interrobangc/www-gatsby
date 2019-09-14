@@ -5,21 +5,20 @@ import IconSectionItem from "../components/IconSectionItem"
 const ConditionalBackgroudImage = ({ data, children}) => {
   console.log(data.id)
   if (data.id && data.backgroundImage){
-    console.log('not null')
     return (
       <BackgroundImage
         Tag="section"
         id={data.id}
+        className="iconSection"
         fluid={[
-          `linear-gradient(rgba(33, 37, 41, 0.80), rgba(33, 37, 41, 0.80))`,
+          `linear-gradient(rgba(33, 37, 41, 0.5), rgba(0, 0, 0, 0.8))`,
           data.backgroundImage.childImageSharp.fluid
         ]}
       >{children}</BackgroundImage>
     )
   } else {
-    console.log('in null')
     return  (
-      <section id={data.id}>{children}</section>
+      <section id={data.id} className="iconSection">{children}</section>
     )
   }
 };
