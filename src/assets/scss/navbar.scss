@@ -1,10 +1,10 @@
 // Styling for the navbar
 #mainNav {
-  -webkit-transition: background .3s ;
-  -moz-transition: background .3s ;
-  -o-transition: background .3s ;
-  transition: background .3s ;
-
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  
   .navbar-toggler {
     font-size: 20px;
     right: 0;
@@ -65,15 +65,7 @@
 @media (min-width: 768px) {
   #mainNav {
     padding: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
     border: 0;
-
-    -webkit-transition: background .3s ;
-    -moz-transition: background .3s ;
-    -o-transition: background .3s ;
-    transition: background .3s ;
 
     .navbar-brand {
       font-size: 1.75em;
