@@ -2,7 +2,7 @@ order: 1
 id: services
 backgroundImage: images/servicesBackground.jpg
 heading: Technical Services
-subheading: We design software, processes, and infrastructures that get out of the way and let empowered developers and system engineers do what they do best.
+subheading: We design software, processes, and infrastructures that get out of the way to let empowered developers and system engineers do what they do best.
 iconItems: 
   - title: Development
     icon: code
