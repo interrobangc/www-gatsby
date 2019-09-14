@@ -3,8 +3,7 @@ import SEO from "../components/Seo"
 import Layout from "../components/Layout"
 import Navbar from "../subpages/Navbar"
 import Masthead from "../subpages/Masthead"
-import Cto from "../subpages/Cto"
-import Services from "../subpages/Services"
+import IconSections from "../subpages/IconSections"
 import Team from "../subpages/Team"
 import Footer from "../subpages/Footer"
 
@@ -14,8 +13,7 @@ function Index() {
       <SEO title="Fractional CTO" />
       <Navbar />
       <Masthead />
-      <Cto />
-      <Services />
+      <IconSections />
       <Team />
       <Footer />
     </Layout>
