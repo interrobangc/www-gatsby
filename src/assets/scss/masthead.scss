@@ -2,9 +2,6 @@
 header.masthead {
   @include background-cover;
   color: $white;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
   height: 100vh;
 
   .intro-text {
