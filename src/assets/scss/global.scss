@@ -19,6 +19,13 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 section {
   padding: 100px 0;
 
@@ -74,9 +81,6 @@ ul.social-buttons {
       display: block;
       width: 40px;
       height: 40px;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
       color: $white;
       border-radius: 10%;
       outline: none;
