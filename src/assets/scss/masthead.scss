@@ -20,13 +20,14 @@ header.masthead {
 
     .intro-heading {
       @include heading-font;
-      font-size: 50px;
+      font-size: 38px;
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
     }
   }
 }
+
 @media (min-width: 768px) {
   header.masthead {
     .intro-text {
@@ -51,3 +52,4 @@ header.masthead {
     }
   }
 }
+
