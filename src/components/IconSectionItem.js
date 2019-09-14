@@ -2,7 +2,7 @@ import React from "react"
 import Bounce from "react-reveal/Bounce"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-function IconItem({ icon, title, description }) {
+function IconSectionItem({ icon, title, description }) {
   return (
     <Bounce left>
       <div className="col-md-4">
@@ -16,4 +16,4 @@ function IconItem({ icon, title, description }) {
   )
 }
 
-export default IconItem
+export default IconSectionItem
