@@ -1,9 +1,9 @@
 // Styling for the navbar
 #mainNav {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
   
   .navbar-toggler {
     font-size: 20px;
@@ -17,11 +17,6 @@
   .navbar-brand {
     @include heading-font;
     color: $primary;
-
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
 
     font-size: 1.1em;
 
@@ -53,9 +48,9 @@
         @include heading-font;
         font-size: 90%;
         font-weight: 400;
-        padding: 0.75em 0;
         letter-spacing: 1px;
         color: $white;
+        padding: 0.75em 0;
 
         &.active,
         &:hover {
