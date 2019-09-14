@@ -5,10 +5,22 @@ import { useStaticQuery, graphql } from "gatsby"
 function IconSections() {
   const { allIconSectionsYaml } = useStaticQuery(graphql`
     {
-      allIconSectionsYaml {
-         edges {
+      allIconSectionsYaml(
+        sort: {
+          fields: [order]
+          order: ASC
+        }
+      ) {
+        edges {
           node {
             id
+            backgroundImage {
+              childImageSharp {
+                fluid(maxWidth: 1000, maxHeight: 1500) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             heading
             subheading
             iconItems {
