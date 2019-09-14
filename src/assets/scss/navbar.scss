@@ -1,6 +1,9 @@
 // Styling for the navbar
 #mainNav {
-  background-color: $gray-900;
+  -webkit-transition: background .3s ;
+  -moz-transition: background .3s ;
+  -o-transition: background .3s ;
+  transition: background .3s ;
 
   .navbar-toggler {
     font-size: 20px;
@@ -15,12 +18,29 @@
     @include heading-font;
     color: $primary;
 
+    font-size: 1.1em;
     &.active,
     &:active,
     &:focus,
     &:hover {
       color: darken($primary, 15%);
     }
+  }
+
+  .collapsing {
+    text-align: right;
+  }
+
+  .show {
+    text-align: right;
+  }
+
+  &.navbar-expanded {
+    background: rgba(33, 37, 41, .87);
+  }
+
+  &.navbar-shrink {
+    background: rgba(33, 37, 41, .87);
   }
 
   .navbar-nav {
@@ -42,14 +62,18 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #mainNav {
     padding: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: 0;
-    background-color: transparent;
+
+    -webkit-transition: background .3s ;
+    -moz-transition: background .3s ;
+    -o-transition: background .3s ;
+    transition: background .3s ;
 
     .navbar-brand {
       font-size: 1.75em;
@@ -69,7 +93,7 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $gray-900;
+      background: rgba(33, 37, 41, .85);
 
       .navbar-brand {
         font-size: 1.25em;

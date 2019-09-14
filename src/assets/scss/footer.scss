@@ -4,12 +4,20 @@ footer {
 
   span.copyright {
     @include heading-font;
-    font-size: 90%;
-    line-height: 40px;
+    font-size: 60%;
     text-transform: none;
+    line-height: 40px;
   }
 
   .social-buttons {
     text-align: right;
+  }
+}
+
+@media (min-width: 428px) {
+  footer {
+    span.copyright {
+      font-size: 90%;
+    }
   }
 }
