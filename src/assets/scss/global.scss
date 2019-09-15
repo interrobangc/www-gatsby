@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "socialButtons";
 @import "iconitem";
 @import "navbar";
 @import "masthead";
@@ -12,24 +13,23 @@ html {
   padding: 0;
   margin: 0;
   @include body-font;
+  background-color: $primary;
 }
 
 body {
   @include body-font;
   overflow-x: hidden;
+  background-color: $primary;
 }
 
 a {
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  @include transition-timing;
 }
 
 section {
   padding: 100px 0;
 
-  h2.section-heading {
+  .section-heading {
     @include heading-font;
     text-align: center;
     font-weight: bold;
@@ -39,10 +39,9 @@ section {
     margin-bottom: 15px;
   }
 
-  h3.section-subheading {
+  .section-subheading {
     @include serif-font;
     font-size: 16px;
-    font-weight: 400;
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
@@ -69,28 +68,4 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-ul.social-buttons {
-  margin-bottom: 0;
-
-  li {
-    a {
-      font-size: 20px;
-      line-height: 35px;
-      display: block;
-      width: 35px;
-      height: 35px;
-      color: $white;
-      border-radius: 10%;
-      outline: none;
-      background-color: $gray-900;
-
-      &:active,
-      &:focus,
-      &:hover {
-        background-color: $primary;
-      }
-    }
-  }
 }

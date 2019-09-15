@@ -1,3 +1,11 @@
 #cto {
-  background-color: $white;
+  background-color: $gray-200;
+
+  .section-subheading {
+    color: $gray-700 !important;
+  }
+
+  .iconItemIcon {
+    color: $gray-700;
+  }
 }

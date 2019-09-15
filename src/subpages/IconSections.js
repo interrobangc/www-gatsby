@@ -5,12 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 function IconSections() {
   const { allIconSectionsYaml } = useStaticQuery(graphql`
     {
-      allIconSectionsYaml(
-        sort: {
-          fields: [order]
-          order: ASC
-        }
-      ) {
+      allIconSectionsYaml(sort: { fields: [order], order: ASC }) {
         edges {
           node {
             id
@@ -34,14 +29,9 @@ function IconSections() {
     }
   `)
 
-  return ( 
-    allIconSectionsYaml.edges.map(({ node }, index) => {
-      return (
-        <IconSection key={index} data={node} />
-      )
-    })
-  )
-
+  return allIconSectionsYaml.edges.map(({ node }, index) => {
+    return <IconSection key={index} data={node} />
+  })
 }
 
 export default IconSections

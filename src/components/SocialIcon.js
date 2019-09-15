@@ -16,6 +16,12 @@ function getUrl(site, username) {
   }
 }
 
+function getLinkClass() {
+  const rand = Math.floor(Math.random() * (3 - 1 + 1)) + 1
+
+  return `hover${rand}`
+}
+
 function getIcon(site) {
   if (site === "email") {
     return "envelope"
@@ -26,7 +32,10 @@ function getIcon(site) {
 function SocialIcon({ site, username }) {
   if (username) {
     return (
-      <a href={getUrl(site, username)} className="text-center">
+      <a
+        href={getUrl(site, username)}
+        className={`text-center ` + getLinkClass()}
+      >
         <FontAwesomeIcon icon={getIcon(site)} size="lg" />
       </a>
     )

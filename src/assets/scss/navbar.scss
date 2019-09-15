@@ -1,9 +1,7 @@
-// Styling for the navbar
+$brandHoverColor: lighten($primary, 5%);
+
 #mainNav {
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  @include transition-timing;
   
   .navbar-toggler {
     font-size: 20px;
@@ -11,7 +9,11 @@
     padding: 5px;
     color: $white;
     border: 0;
-    background-color: $primary;
+    background: $primaryTransparent;
+    
+    &:hover {
+      background: darken($primaryTransparent, 15%);
+    }
   }
 
   .navbar-brand {
@@ -21,8 +23,8 @@
     font-size: 1.1em;
 
     &:hover {
-      color: darken($primary, 15%);
-      font-size: 120%;
+      color: $brandHoverColor;
+      font-size: 113%;
     }
   }
 
@@ -52,10 +54,11 @@
         color: $white;
         padding: 0.75em 0;
 
-        &.active,
+        &:active,
+        &:focus,
         &:hover {
           color: $primary;
-          font-size: 95%;
+          font-size: 93%;
         }
       }
     }
@@ -71,8 +74,8 @@
       font-size: 1.75em;
 
       &:hover {
-        color: darken($primary, 15%);
-        font-size: 180%;
+        color: $brandHoverColor;
+        font-size: 177%;
       }
     }
 
@@ -94,7 +97,7 @@
         padding: 12px 0;
 
         &:hover {
-          font-size: 130%;
+          font-size: 127%;
         }
       }
     }

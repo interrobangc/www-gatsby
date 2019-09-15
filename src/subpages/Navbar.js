@@ -10,9 +10,14 @@ class Navbar extends React.Component {
   constructor(props) {
     super(props)
 
+    this.closeNav = this.closeNav.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
     this.toggleNavExpanded = this.toggleNavExpanded.bind(this)
-    this.closeNav = this.closeNav.bind(this)
+    this.handleAnchorClick = this.handleAnchorClick.bind(this)
+    this.deactivateNavOnScroll = this.deactivateNavOnScroll.bind(this)
+    this.registerDeactivateNavOnScroll = this.registerDeactivateNavOnScroll.bind(
+      this
+    )
   }
 
   componentDidMount() {
@@ -21,18 +26,41 @@ class Navbar extends React.Component {
 
   componentWillUnmount() {
     document.removeEventListener("scroll", this.handleScroll)
+    document.removeEventListener("scroll", this.deactivateNavOnScroll)
   }
 
   setIsNavExpanded(isNavExpanded) {
-    this.setState({ isNavExpanded });
+    this.setState({ isNavExpanded })
   }
 
   toggleNavExpanded() {
-    this.setIsNavExpanded(!this.state.isNavExpanded);
+    this.setIsNavExpanded(!this.state.isNavExpanded)
+  }
+
+  deactivateNavOnScroll() {
+    document.activeElement.blur()
+    document.removeEventListener("scroll", this.deactivateNavOnScroll)
+  }
+
+  registerDeactivateNavOnScroll() {
+    document.addEventListener("scroll", this.deactivateNavOnScroll)
   }
 
   closeNav() {
-    this.setIsNavExpanded(false);
+    this.setIsNavExpanded(false)
+  }
+
+  handleAnchorClick() {
+    // all of this complication is so we can deactivate the
+    // nav anchor link when the user starts scrolling.
+
+    // remove the listener before we start in case it is already active
+    document.removeEventListener("scroll", this.deactivateNavOnScroll)
+
+    // give the page time to scroll before registering the listener
+    window.setTimeout(this.registerDeactivateNavOnScroll, 1400)
+
+    this.closeNav()
   }
 
   handleScroll() {
@@ -43,7 +71,7 @@ class Navbar extends React.Component {
   }
 
   getClassName() {
-    let classes = `navbar navbar-expand-lg navbar-dark fixed-top`;
+    let classes = ``
     if (this.state.isScrolled) {
       classes += ` navbar-shrink`
     }
@@ -52,7 +80,7 @@ class Navbar extends React.Component {
       classes += ` navbar-expanded`
     }
 
-    return classes;
+    return classes
   }
 
   render() {
@@ -60,9 +88,18 @@ class Navbar extends React.Component {
       <div>
         <nav
           id="mainNav"
-          className={this.getClassName()}
+          className={
+            `navbar navbar-expand-lg navbar-dark fixed-top ` +
+            this.getClassName()
+          }
         >
-          <AnchorLink href="#page-top" onClick={this.closeNav} data-toggle="collapse" data-target=".navbar-collapse.show" className="navbar-brand">
+          <AnchorLink
+            href="#page-top"
+            onClick={this.closeNav}
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            className="navbar-brand"
+          >
             Interrobang Consulting
           </AnchorLink>
           <button
@@ -80,17 +117,35 @@ class Navbar extends React.Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav text-uppercase ml-auto">
               <li className="nav-item">
-                <AnchorLink onClick={this.closeNav} data-toggle="collapse" data-target=".navbar-collapse.show" className="nav-link" href="#cto">
+                <AnchorLink
+                  onClick={this.handleAnchorClick}
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  className="nav-link"
+                  href="#cto"
+                >
                   fractional cto
                 </AnchorLink>
               </li>
               <li className="nav-item">
-                <AnchorLink onClick={this.closeNav} data-toggle="collapse" data-target=".navbar-collapse.show"className="nav-link" href="#services">
+                <AnchorLink
+                  onClick={this.handleAnchorClick}
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  className="nav-link"
+                  href="#services"
+                >
                   technical services
                 </AnchorLink>
               </li>
               <li className="nav-item">
-                <AnchorLink onClick={this.closeNav} data-toggle="collapse" data-target=".navbar-collapse.show"className="nav-link" href="#team">
+                <AnchorLink
+                  onClick={this.handleAnchorClick}
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  className="nav-link"
+                  href="#team"
+                >
                   team
                 </AnchorLink>
               </li>

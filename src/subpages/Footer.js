@@ -3,7 +3,7 @@ import SocialIcon from "../components/SocialIcon"
 
 function Footer() {
   return (
-    <footer className="bg-light">
+    <footer>
       <div className="container">
         <div className="row">
           <div className="col-7">

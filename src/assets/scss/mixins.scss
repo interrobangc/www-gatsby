@@ -19,3 +19,10 @@
   -o-background-size: cover; // sass-lint:disable-line no-misspelled-properties
   background-size: cover;
 }
+
+@mixin transition-timing {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+}
