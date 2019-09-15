@@ -3,6 +3,7 @@
   margin-bottom: 1em;
   text-align: center;
   .iconItemTitle {
+    @include heading-font;
     margin-top: 1em;
   }
   .iconItemDescription {
