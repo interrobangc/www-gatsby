@@ -27,7 +27,7 @@ function Masthead() {
       className="masthead"
       fluid={[
         `linear-gradient(rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 0.2))`,
-        image.childImageSharp.fluid
+        image.childImageSharp.fluid,
       ]}
       backgroundColor={`#040e18`}
     >

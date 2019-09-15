@@ -15,7 +15,9 @@ class Navbar extends React.Component {
     this.toggleNavExpanded = this.toggleNavExpanded.bind(this)
     this.handleAnchorClick = this.handleAnchorClick.bind(this)
     this.deactivateNavOnScroll = this.deactivateNavOnScroll.bind(this)
-    this.registerDeactivateNavOnScroll = this.registerDeactivateNavOnScroll.bind(this)
+    this.registerDeactivateNavOnScroll = this.registerDeactivateNavOnScroll.bind(
+      this
+    )
   }
 
   componentDidMount() {
@@ -28,15 +30,15 @@ class Navbar extends React.Component {
   }
 
   setIsNavExpanded(isNavExpanded) {
-    this.setState({ isNavExpanded });
+    this.setState({ isNavExpanded })
   }
 
   toggleNavExpanded() {
-    this.setIsNavExpanded(!this.state.isNavExpanded);
+    this.setIsNavExpanded(!this.state.isNavExpanded)
   }
 
   deactivateNavOnScroll() {
-    document.activeElement.blur();
+    document.activeElement.blur()
     document.removeEventListener("scroll", this.deactivateNavOnScroll)
   }
 
@@ -45,7 +47,7 @@ class Navbar extends React.Component {
   }
 
   closeNav() {
-    this.setIsNavExpanded(false);
+    this.setIsNavExpanded(false)
   }
 
   handleAnchorClick() {
@@ -56,9 +58,9 @@ class Navbar extends React.Component {
     document.removeEventListener("scroll", this.deactivateNavOnScroll)
 
     // give the page time to scroll before registering the listener
-    window.setTimeout(this.registerDeactivateNavOnScroll,1400);
+    window.setTimeout(this.registerDeactivateNavOnScroll, 1400)
 
-    this.closeNav();
+    this.closeNav()
   }
 
   handleScroll() {
@@ -69,7 +71,7 @@ class Navbar extends React.Component {
   }
 
   getClassName() {
-    let classes = `navbar navbar-expand-lg navbar-dark fixed-top`;
+    let classes = `navbar navbar-expand-lg navbar-dark fixed-top`
     if (this.state.isScrolled) {
       classes += ` navbar-shrink`
     }
@@ -78,17 +80,20 @@ class Navbar extends React.Component {
       classes += ` navbar-expanded`
     }
 
-    return classes;
+    return classes
   }
 
   render() {
     return (
       <div>
-        <nav
-          id="mainNav"
-          className={this.getClassName()}
-        >
-          <AnchorLink href="#page-top" onClick={this.closeNav} data-toggle="collapse" data-target=".navbar-collapse.show" className="navbar-brand">
+        <nav id="mainNav" className={this.getClassName()}>
+          <AnchorLink
+            href="#page-top"
+            onClick={this.closeNav}
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            className="navbar-brand"
+          >
             Interrobang Consulting
           </AnchorLink>
           <button
@@ -106,17 +111,35 @@ class Navbar extends React.Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav text-uppercase ml-auto">
               <li className="nav-item">
-                <AnchorLink onClick={this.handleAnchorClick} data-toggle="collapse" data-target=".navbar-collapse.show" className="nav-link" href="#cto">
+                <AnchorLink
+                  onClick={this.handleAnchorClick}
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  className="nav-link"
+                  href="#cto"
+                >
                   fractional cto
                 </AnchorLink>
               </li>
               <li className="nav-item">
-                <AnchorLink onClick={this.handleAnchorClick} data-toggle="collapse" data-target=".navbar-collapse.show"className="nav-link" href="#services">
+                <AnchorLink
+                  onClick={this.handleAnchorClick}
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  className="nav-link"
+                  href="#services"
+                >
                   technical services
                 </AnchorLink>
               </li>
               <li className="nav-item">
-                <AnchorLink onClick={this.handleAnchorClick} data-toggle="collapse" data-target=".navbar-collapse.show"className="nav-link" href="#team">
+                <AnchorLink
+                  onClick={this.handleAnchorClick}
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  className="nav-link"
+                  href="#team"
+                >
                   team
                 </AnchorLink>
               </li>
