@@ -5,23 +5,39 @@ header.masthead {
   height: 100vh;
 
   .intro-text {
-    padding-top: 33vh;
+    padding-top: 36vh;
     padding-right: 0;
 
     .intro-lead-in {
       @include serif-font;
       font-size: 22px;
       font-style: italic;
-      line-height: 22px;
-      margin-bottom: 25px;
+      margin-bottom: 5px;
     }
 
     .intro-heading {
       @include heading-font;
-      font-size: 34px;
+      font-size: 32px;
       font-weight: 700;
-      line-height: 50px;
+      line-height: 38px;
       margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: 483px) {
+  header.masthead {
+    .intro-text {
+      .intro-lead-in {
+        font-size: 26px;
+        margin-bottom: 5px;
+      }
+
+      .intro-heading {
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 25px;
+      }
     }
   }
 }
