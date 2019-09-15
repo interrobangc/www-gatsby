@@ -71,7 +71,7 @@ class Navbar extends React.Component {
   }
 
   getClassName() {
-    let classes = `navbar navbar-expand-lg navbar-dark fixed-top`
+    let classes = ``
     if (this.state.isScrolled) {
       classes += ` navbar-shrink`
     }
@@ -86,7 +86,13 @@ class Navbar extends React.Component {
   render() {
     return (
       <div>
-        <nav id="mainNav" className={this.getClassName()}>
+        <nav
+          id="mainNav"
+          className={
+            `navbar navbar-expand-lg navbar-dark fixed-top ` +
+            this.getClassName()
+          }
+        >
           <AnchorLink
             href="#page-top"
             onClick={this.closeNav}
