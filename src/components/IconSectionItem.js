@@ -1,7 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-function IconSectionItem({ icon, title, description }) {
+function IconSectionItem({ index, icon, title, description }) {
   return (
     <div className="col-md-4">
       <div className="iconItem">

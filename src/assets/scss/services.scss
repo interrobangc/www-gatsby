@@ -1,4 +1,12 @@
 #services {
  color: $white;
  opacity: 0.6;
+
+  .section-subheading {
+    color: $gray-300 !important;
+  }
+
+  .iconItemIcon {
+    color: $gray-300;
+  }
 }

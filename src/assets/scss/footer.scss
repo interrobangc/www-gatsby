@@ -1,9 +1,11 @@
 // Styling for the footer
 footer {
+  background: rgba(33, 37, 41, .85);
   padding: 10px 0;
 
   span.copyright {
     @include heading-font;
+    color: $primary;
     font-size: 60%;
     text-transform: none;
     line-height: 40px;
@@ -11,6 +13,11 @@ footer {
 
   .social-buttons {
     text-align: right;
+    li {
+      a {
+        color: $gray-200;
+      }
+    }
   }
 }
 
