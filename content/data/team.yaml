@@ -3,34 +3,28 @@
   image: images/team/milo.jpg
   github: miloschuman
   linkedin: milo-schuman-9940961
-  facebook:
 
 - name: Robert Bo Davis
   title: Founder & CTO
   image: images/team/bo.jpg
   github: robert-bo-davis
   linkedin: robert-bo-davis
-  facebook:
 
 - name: Brendan Murphy
   title: Junior Developer
   image: images/team/brendan.jpg
   github: brendan-mur
-  linkedin: brendan-murphy-959849159
-  facebook:
+  linkedin: brendan-c-murphy
 
 - name: Matt Evanoff
   title: Front End Consultant
   image: images/team/matt.evanoff.jpg
   github: theintrnet
   linkedin: mattevanoff
-  facebook:
 
 - name: Posha
   title: Founder & CEO
   image: images/team/posha.jpg
-  github:
-  linkedin:
   facebook: poshin.tang
 
 - name: Matt Davis
@@ -38,4 +32,3 @@
   image: images/team/matt.davis.jpg
   github: mrjmd
   linkedin: mrjmd
-  facebook:
