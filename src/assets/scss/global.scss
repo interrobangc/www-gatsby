@@ -27,7 +27,8 @@ a {
 }
 
 section {
-  padding: 100px 0;
+  padding-top: 15%;
+  min-height: 100vh;
 
   .section-heading {
     @include heading-font;
@@ -47,12 +48,6 @@ section {
     text-transform: none;
     padding-right: 2em;
     padding-left: 2em;
-  }
-}
-
-@media (min-width: 768px) {
-  section {
-    padding: 150px 0;
   }
 }
 
