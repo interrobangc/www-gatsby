@@ -1,17 +1,12 @@
 #team {
+  padding-top: 15%;
+  padding-bottom: 15%;
   background-color: $gray-100;
-  padding-bottom: 50px;
-
   text-align: center;
-
-  .section-heading {
-    margin-bottom: 1.25em;
-  }
 
   .teamItem {
     @include heading-font;
-    margin: 0;
-    margin-bottom: 50px;
+    margin-top: 5vh;
 
     .teamItemImage {
       border-radius: 20%;
@@ -20,7 +15,7 @@
     }
 
     h4 {
-      margin-top: .3em;
+      margin-top: 0.3em;
       margin-bottom: 0;
       text-transform: none;
     }
@@ -35,5 +30,12 @@
         margin-right: 2px;
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  #team {
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 }
