@@ -3,7 +3,6 @@ import BackgroundImage from "gatsby-background-image"
 import IconSectionItem from "../components/IconSectionItem"
 
 const ConditionalBackgroudImage = ({ data, children }) => {
-  console.log(data.id)
   if (data.id && data.backgroundImage) {
     return (
       <BackgroundImage
