@@ -9,7 +9,6 @@ This repository contains the gatsby site <https://interrobang.consulting>.
 
 ## Quickstart
 
-1. `yarn global add gatsby-dev-cli`
 1. `yarn install`
 1. `yarn global add husky`
-1. `gatsby develop`
+1. `yarn run develop`
