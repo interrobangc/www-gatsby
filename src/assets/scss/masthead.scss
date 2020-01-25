@@ -1,6 +1,7 @@
 // Styling for the masthead
 header.masthead {
   @include background-cover;
+  @include sharp-background-fix;
   color: $white;
   height: 100vh;
 

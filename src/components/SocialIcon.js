@@ -35,6 +35,7 @@ function SocialIcon({ site, username }) {
       <a
         href={getUrl(site, username)}
         className={`text-center ` + getLinkClass()}
+        title={site}
       >
         <FontAwesomeIcon icon={getIcon(site)} size="lg" />
       </a>

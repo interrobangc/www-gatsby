@@ -10,7 +10,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
-    "gatsby": "^2.13.25",
+    "gatsby": "^2.19.5",
     "gatsby-background-image": "^0.8.9",
     "gatsby-image": "^2.2.18",
     "gatsby-plugin-google-analytics": "^2.1.16",
@@ -29,7 +29,9 @@
     "react": "^16.8.6",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "typeface-droid-serif": "^0.0.44",
+    "typeface-montserrat": "^0.0.75"
   },
   "devDependencies": {
     "husky": "^3.0.5",
@@ -44,7 +46,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*",
+    "format": "prettier --write 'src/**/*'",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""

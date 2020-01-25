@@ -9,6 +9,7 @@
     margin-top: 5vh;
 
     .teamItemImage {
+      @include sharp-background-fix;
       border-radius: 20%;
       width: 225px;
       height: 225px;

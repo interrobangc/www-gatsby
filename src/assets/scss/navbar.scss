@@ -2,7 +2,7 @@ $brandHoverColor: lighten($primary, 5%);
 
 #mainNav {
   @include transition-timing;
-  
+
   .navbar-toggler {
     font-size: 20px;
     right: 0;
@@ -10,7 +10,7 @@ $brandHoverColor: lighten($primary, 5%);
     color: $white;
     border: 0;
     background: $primaryTransparent;
-    
+
     &:hover {
       background: darken($primaryTransparent, 15%);
     }
@@ -37,11 +37,11 @@ $brandHoverColor: lighten($primary, 5%);
   }
 
   &.navbar-expanded {
-    background: rgba(33, 37, 41, .87);
+    background: rgba(33, 37, 41, 0.87);
   }
 
   &.navbar-shrink {
-    background: rgba(33, 37, 41, .87);
+    background: rgba(33, 37, 41, 0.87);
   }
 
   .navbar-nav {
@@ -90,7 +90,7 @@ $brandHoverColor: lighten($primary, 5%);
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background: rgba(33, 37, 41, .85);
+      background: rgba(33, 37, 41, 0.85);
 
       .navbar-brand {
         font-size: 1.25em;

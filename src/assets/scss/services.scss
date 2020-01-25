@@ -1,6 +1,7 @@
 #services {
- color: $white;
- opacity: 0.6;
+  @include sharp-background-fix;
+  color: $white;
+  opacity: 0.6;
 
   .section-subheading {
     color: $gray-300 !important;

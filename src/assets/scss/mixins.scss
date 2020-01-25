@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
-
 // Font Mixins
 @mixin body-font {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,4 +22,8 @@
   -moz-transition: all 0.35s;
   -o-transition: all 0.35s;
   transition: all 0.35s;
+}
+
+@mixin sharp-background-fix {
+  background-color: $black;
 }
