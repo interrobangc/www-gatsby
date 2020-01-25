@@ -26,3 +26,7 @@
   -o-transition: all 0.35s;
   transition: all 0.35s;
 }
+
+@mixin sharp-background-fix {
+  background-color: $black;
+}

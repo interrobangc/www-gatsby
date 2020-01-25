@@ -1,6 +1,5 @@
 #services {
-  // prevent $primary from bleeding through on image sharpen
-  background-color: $black;
+  @include sharp-background-fix;
   color: $white;
   opacity: 0.6;
 

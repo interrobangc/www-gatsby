@@ -1,8 +1,7 @@
 // Styling for the masthead
 header.masthead {
   @include background-cover;
-  // prevent $primary from bleeding through on image sharpen
-  background-color: $black;
+  @include sharp-background-fix;
   color: $white;
   height: 100vh;
 
