@@ -29,7 +29,9 @@
     "react": "^16.8.6",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "typeface-droid-serif": "^0.0.44",
+    "typeface-montserrat": "^0.0.75"
   },
   "devDependencies": {
     "husky": "^3.0.5",

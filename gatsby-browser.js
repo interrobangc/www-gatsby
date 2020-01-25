@@ -1,3 +1,5 @@
 require("bootstrap/dist/js/bootstrap")
 require("bootstrap/dist/css/bootstrap.css")
 require("./src/assets/scss/global.scss")
+require("typeface-montserrat")
+require("typeface-droid-serif")
