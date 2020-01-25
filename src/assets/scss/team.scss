@@ -9,6 +9,8 @@
     margin-top: 5vh;
 
     .teamItemImage {
+      // prevent $primary from bleeding through on image sharpen
+      background-color: $black;
       border-radius: 20%;
       width: 225px;
       height: 225px;

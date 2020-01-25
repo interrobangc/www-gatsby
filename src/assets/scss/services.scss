@@ -1,6 +1,8 @@
 #services {
- color: $white;
- opacity: 0.6;
+  // prevent $primary from bleeding through on image sharpen
+  background-color: $black;
+  color: $white;
+  opacity: 0.6;
 
   .section-subheading {
     color: $gray-300 !important;
