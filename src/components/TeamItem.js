@@ -12,7 +12,7 @@ function TeamItem({ name, title, image, github, linkedin, facebook }) {
           alt={name}
         />
         <h4>{name}</h4>
-        <p className="text-muted">{title}</p>
+        <p>{title}</p>
         <ul className="list-inline social-buttons">
           <li className="list-inline-item">
             <SocialIcon site="github" username={github} />
