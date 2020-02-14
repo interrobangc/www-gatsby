@@ -1,11 +1,27 @@
 // Styling for the footer
 footer {
-  background: lighten(rgb(33, 37, 41), 11%);
-  padding: 10px 25px;
+  @include transition-timing;
+  padding: 8px;
+
+  &.scrolled {
+    background: rgba(33, 37, 41, 0.87);
+
+    span.copyright {
+      display: block;
+      color: $primary;
+    }
+    .social-buttons {
+      li {
+        a {
+          color: $gray-200;
+        }
+      }
+    }
+  }
 
   span.copyright {
     @include heading-font;
-    color: $primary;
+    display: none;
     font-size: 60%;
     text-transform: none;
     line-height: 40px;
@@ -15,7 +31,7 @@ footer {
     text-align: right;
     li {
       a {
-        color: $gray-200;
+        color: $primary;
       }
     }
   }
@@ -26,5 +42,11 @@ footer {
     span.copyright {
       font-size: 90%;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 8px 25px;
   }
 }

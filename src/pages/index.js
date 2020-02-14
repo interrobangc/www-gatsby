@@ -12,10 +12,10 @@ function Index() {
     <Layout>
       <SEO title="Fractional CTO" />
       <Navbar />
+      <Footer />
       <Masthead />
       <IconSections />
       <Team />
-      <Footer />
     </Layout>
   )
 }
