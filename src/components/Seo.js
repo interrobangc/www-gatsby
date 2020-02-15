@@ -89,11 +89,14 @@ SEO.defaultProps = {
     `Development`,
     `DevOps`,
     `infrastructure`,
+    `CloudOps`,
     `Fractional CTO`,
     `CTO`,
     `CTO as a service`,
+    `startup leadership`,
+    `technical co-founder`,
   ],
-  description: `We provide fractional CTO services that come with the support of an existing team`,
+  description: `Fractional CTO services with the support of an existing team and bespoke Development, DevOps, and CloudOps.`,
 }
 
 SEO.propTypes = {

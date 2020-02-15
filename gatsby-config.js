@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Interrobang Consulting`,
-    description: `Fractional CTO services with the support of an existing team`,
+    description: `Fractional CTO services with the support of an existing team and bespoke Development, DevOps, and CloudOps.`,
     author: `@robert-bo-davis`,
   },
   plugins: [
