@@ -5,14 +5,14 @@ import Img from "gatsby-image"
 function IconOrImage({ title, image, imageBackground, icon }) {
   if (image === null) {
     return (
-      <div className="card-header border-0 iconHeader">
+      <div className="card-header border-0">
         <FontAwesomeIcon
-          className="iconItemIcon"
+          className="card-icon"
           icon={icon}
           size="6x"
           alt={title}
         />
-        <h3 className="card-title iconTitle">{title}</h3>
+        <h3 className="card-title icon-title">{title}</h3>
       </div>
     )
   }
@@ -21,21 +21,21 @@ function IconOrImage({ title, image, imageBackground, icon }) {
     <div className="card-header border-0">
       <div className="image-background">
         <Img
-          className="iconItemImage"
+          className="card-img-top"
           alt={title}
           fluid={image.childImageSharp.fluid}
         />
       </div>
       <div className="card-img-overlay">
-        <h3 className="card-title imageTitle">{title}</h3>
+        <h3 className="card-title image-title">{title}</h3>
       </div>
     </div>
   )
 }
 
-function IconSectionItem({ index, icon, image, title, description }) {
+function Card({ index, icon, image, title, description }) {
   return (
-    <div className="card border-0 iconItem">
+    <div className="card border-0">
       <IconOrImage key={index} title={title} image={image} icon={icon} />
       <div className="card-body">
         <p className="card-text">{description}</p>
@@ -44,4 +44,4 @@ function IconSectionItem({ index, icon, image, title, description }) {
   )
 }
 
-export default IconSectionItem
+export default Card

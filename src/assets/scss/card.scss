@@ -1,6 +1,6 @@
 $borderRadiusTop: 3% 3% 0 0;
 $borderRadiusBottom: 0 0 3% 3%;
-.iconItem {
+.card {
   display: flex;
   text-align: center;
   border-radius: $borderRadiusTop;
@@ -17,7 +17,7 @@ $borderRadiusBottom: 0 0 3% 3%;
     background: linear-gradient(rgb(33, 37, 41), rgb(0, 0, 0));
   }
 
-  .iconItemImage {
+  .card-img-top {
     opacity: 0.4;
     border-radius: $borderRadiusTop;
   }
@@ -26,20 +26,15 @@ $borderRadiusBottom: 0 0 3% 3%;
     padding: 0;
   }
 
-  .iconHeader {
-    margin: auto;
-    padding-top: 15%;
-  }
-
   .card-title {
     color: $white;
   }
 
-  .imageTitle {
+  .image-title {
     margin-top: 33%;
   }
 
-  .iconTitle {
+  .icon-title {
     margin-top: 0.7rem;
   }
 

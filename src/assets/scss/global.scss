@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "socialButtons";
-@import "iconitem";
+@import "card";
 @import "navbar";
 @import "masthead";
 @import "cto";
@@ -23,6 +23,10 @@ body {
 
 a {
   @include transition-timing;
+}
+
+.container-fluid {
+  padding: 0 8%;
 }
 
 section {

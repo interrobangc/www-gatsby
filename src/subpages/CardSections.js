@@ -1,11 +1,11 @@
 import React from "react"
-import IconSection from "../components/IconSection"
+import CardSection from "../components/CardSection"
 import { useStaticQuery, graphql } from "gatsby"
 
-function IconSections() {
-  const { allIconSectionsYaml } = useStaticQuery(graphql`
+function CardSections() {
+  const { allCardSectionsYaml } = useStaticQuery(graphql`
     {
-      allIconSectionsYaml(sort: { fields: [order], order: ASC }) {
+      allCardSectionsYaml(sort: { fields: [order], order: ASC }) {
         edges {
           node {
             id
@@ -19,7 +19,7 @@ function IconSections() {
             }
             heading
             subheading
-            iconItems {
+            cards {
               title
               icon
               image {
@@ -37,9 +37,9 @@ function IconSections() {
     }
   `)
 
-  return allIconSectionsYaml.edges.map(({ node }, index) => {
-    return <IconSection key={index} data={node} />
+  return allCardSectionsYaml.edges.map(({ node }, index) => {
+    return <CardSection key={index} data={node} />
   })
 }
 
-export default IconSections
+export default CardSections

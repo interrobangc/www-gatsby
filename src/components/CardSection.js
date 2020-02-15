@@ -1,6 +1,6 @@
 import React from "react"
 import BackgroundImage from "gatsby-background-image"
-import IconSectionItem from "../components/IconSectionItem"
+import Card from "./Card"
 
 const ConditionalBackgroudImage = ({ data, children }) => {
   if (data.id && data.backgroundImage) {
@@ -8,7 +8,7 @@ const ConditionalBackgroudImage = ({ data, children }) => {
       <BackgroundImage
         Tag="section"
         id={data.id}
-        className="iconSection"
+        className="cardSection"
         fluid={[
           data.backgroundGradient,
           data.backgroundImage.childImageSharp.fluid,
@@ -19,17 +19,17 @@ const ConditionalBackgroudImage = ({ data, children }) => {
     )
   } else {
     return (
-      <section id={data.id} className="iconSection">
+      <section id={data.id} className="cardSection">
         {children}
       </section>
     )
   }
 }
 
-function IconSection({ data }) {
+function CardSection({ data }) {
   return (
     <ConditionalBackgroudImage data={data}>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-lg-8">
             <h2 className="section-heading">{data.heading}</h2>
@@ -38,9 +38,9 @@ function IconSection({ data }) {
         </div>
         <div className="row mx-auto">
           <div className="card-deck">
-            {data.iconItems.map((node, index) => {
+            {data.cards.map((node, index) => {
               return (
-                <IconSectionItem
+                <Card
                   key={index}
                   index={index}
                   title={node.title}
@@ -57,4 +57,4 @@ function IconSection({ data }) {
   )
 }
 
-export default IconSection
+export default CardSection

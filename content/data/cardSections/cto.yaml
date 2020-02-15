@@ -4,7 +4,7 @@ backgroundGradient: linear-gradient(rgba(213, 221, 235, 0.8), rgba(255, 255, 244
 backgroundImage: images/ctoBackground.jpg
 heading: Fractional CTO
 subheading: We provide fractional CTO services that come with the support of an existing team. This allows us to make progress toward your goals with minimal ramp up time.
-iconItems:
+cards:
   - title: Planning
     image: images/planning.jpg
     description: A startup's journey is rarely direct. Its pace is rarely steady. Making the right moves at the right time is vital. We'll keep you on track.

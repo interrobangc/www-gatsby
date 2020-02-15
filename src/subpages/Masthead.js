@@ -31,7 +31,7 @@ function Masthead() {
       ]}
       backgroundColor={`#040e18`}
     >
-      <div className="container">
+      <div className="container-fluid">
         <div className="intro-text">
           <div className="intro-lead-in">{scriptText}</div>
           <div className="intro-heading text-uppercase">{capsText}</div>
