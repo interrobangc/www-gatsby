@@ -9,6 +9,7 @@ function IconSections() {
         edges {
           node {
             id
+            backgroundGradient
             backgroundImage {
               childImageSharp {
                 fluid(maxWidth: 1000, maxHeight: 1500) {

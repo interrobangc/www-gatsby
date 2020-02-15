@@ -10,7 +10,7 @@ const ConditionalBackgroudImage = ({ data, children }) => {
         id={data.id}
         className="iconSection"
         fluid={[
-          `linear-gradient(rgba(33, 37, 41, 0.5), rgba(0, 0, 0, 0.8))`,
+          data.backgroundGradient,
           data.backgroundImage.childImageSharp.fluid,
         ]}
       >

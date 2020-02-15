@@ -1,9 +1,10 @@
 order: 0
 id: cto
-backgroundImage: null
+backgroundGradient: linear-gradient(rgba(213, 221, 235, 0.5), rgba(255, 255, 244, .7))
+backgroundImage: images/ctoBackground.jpg
 heading: Fractional CTO
 subheading: We provide fractional CTO services that come with the support of an existing team. This allows us to make progress toward your goals with minimal ramp up time.
-iconItems: 
+iconItems:
   - title: Planning
     icon: chart-line
     description: A startup's journey is rarely direct. Its pace is rarely steady. Making the right moves at the right time is vital. We'll keep you on track.
@@ -13,4 +14,3 @@ iconItems:
   - title: Staffing
     icon: handshake
     description: We'll help you hire, train, and retain the technical staff and consultants required to efficiently achieve your growth goals.
-    
