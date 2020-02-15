@@ -64,7 +64,7 @@ class Navbar extends React.Component {
   }
 
   handleScroll() {
-    const isScrolled = window.scrollY > 56
+    const isScrolled = window.scrollY > 13
     if (isScrolled !== this.state.isScrolled) {
       this.setState({ isScrolled })
     }
