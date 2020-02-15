@@ -29,13 +29,13 @@ a {
 section {
   padding-top: 16%;
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   flex-direction: column;
   min-height: 100vh;
 
   .section-heading {
     @include heading-font;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 40px;
@@ -47,13 +47,12 @@ section {
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
-    padding-right: 2em;
-    padding-left: 2em;
+    padding-right: 5em;
   }
 }
 
 @media (min-width: 768px) {
   section {
-    padding-top: 0;
+    padding-top: 6%;
   }
 }

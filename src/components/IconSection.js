@@ -31,7 +31,7 @@ function IconSection({ data }) {
     <ConditionalBackgroudImage data={data}>
       <div className="container">
         <div className="row">
-          <div className="col-lg-8 mx-auto">
+          <div className="col-lg-8">
             <h2 className="section-heading">{data.heading}</h2>
             <h3 className="section-subheading">{data.subheading}</h3>
           </div>
