@@ -3,9 +3,10 @@
   padding-bottom: 15%;
   background-color: $gray-200;
   text-align: center;
-
+  .section-heading {
+    text-align: center;
+  }
   .teamItem {
-    @include heading-font;
     margin-top: 5vh;
 
     .teamItemImage {

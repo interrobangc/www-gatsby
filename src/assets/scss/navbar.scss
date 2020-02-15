@@ -17,7 +17,6 @@ $brandHoverColor: lighten($primary, 5%);
   }
 
   .navbar-brand {
-    @include heading-font;
     color: $primary;
 
     font-size: 1.1em;
@@ -47,7 +46,6 @@ $brandHoverColor: lighten($primary, 5%);
   .navbar-nav {
     .nav-item {
       .nav-link {
-        @include heading-font;
         font-size: 90%;
         font-weight: 400;
         letter-spacing: 1px;

@@ -20,7 +20,6 @@ footer {
   }
 
   span.copyright {
-    @include heading-font;
     display: none;
     font-size: 60%;
     text-transform: none;

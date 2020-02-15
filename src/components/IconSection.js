@@ -37,17 +37,20 @@ function IconSection({ data }) {
           </div>
         </div>
         <div className="row mx-auto">
-          {data.iconItems.map((node, index) => {
-            return (
-              <IconSectionItem
-                key={index}
-                index={index}
-                title={node.title}
-                icon={node.icon}
-                description={node.description}
-              />
-            )
-          })}
+          <div className="card-deck">
+            {data.iconItems.map((node, index) => {
+              return (
+                <IconSectionItem
+                  key={index}
+                  index={index}
+                  title={node.title}
+                  icon={node.icon}
+                  image={node.image}
+                  description={node.description}
+                />
+              )
+            })}
+          </div>
         </div>
       </div>
     </ConditionalBackgroudImage>

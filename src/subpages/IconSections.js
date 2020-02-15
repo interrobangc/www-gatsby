@@ -22,6 +22,13 @@ function IconSections() {
             iconItems {
               title
               icon
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 800, maxHeight: 600) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               description
             }
           }

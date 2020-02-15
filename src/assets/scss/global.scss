@@ -12,7 +12,6 @@
 html {
   padding: 0;
   margin: 0;
-  @include body-font;
   background-color: $primary;
 }
 
@@ -29,12 +28,11 @@ a {
 section {
   padding-top: 16%;
   display: flex;
-  //justify-content: center;
+  justify-content: center;
   flex-direction: column;
   min-height: 100vh;
 
   .section-heading {
-    @include heading-font;
     text-align: left;
     font-weight: bold;
     text-transform: uppercase;
@@ -42,7 +40,6 @@ section {
   }
 
   .section-subheading {
-    @include serif-font;
     font-size: 16px;
     font-style: italic;
     margin-bottom: 75px;

@@ -1,14 +1,58 @@
+$borderRadiusTop: 3% 3% 0 0;
+$borderRadiusBottom: 0 0 3% 3%;
 .iconItem {
-  display: inline-block;
-  margin-bottom: 1em;
+  display: flex;
   text-align: center;
+  border-radius: $borderRadiusTop;
+  background: rgba(1, 53, 230, 0.07);
+  border-radius: $borderRadiusBottom;
 
-  .iconItemTitle {
-    @include heading-font;
-    margin-top: 1em;
+  .card-header {
+    background: transparent;
+    padding: 0;
   }
 
-  .iconItemDescription {
+  .image-background {
+    border-radius: $borderRadiusTop;
+    background: linear-gradient(rgb(33, 37, 41), rgb(0, 0, 0));
+  }
+
+  .iconItemImage {
+    opacity: 0.4;
+    border-radius: $borderRadiusTop;
+  }
+
+  .card-img-overlay {
+    padding: 0;
+  }
+
+  .iconHeader {
+    margin: auto;
+    padding-top: 15%;
+  }
+
+  .card-title {
+    color: $white;
+  }
+
+  .imageTitle {
+    margin-top: 33%;
+  }
+
+  .iconTitle {
+    margin-top: 10%;
+  }
+
+  .card-text {
     text-align: left;
+    padding: 0 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-deck .card {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    margin-bottom: 5%;
   }
 }
