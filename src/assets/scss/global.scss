@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "socialButtons";
-@import "iconitem";
+@import "card";
 @import "navbar";
 @import "masthead";
 @import "cto";
@@ -12,7 +12,6 @@
 html {
   padding: 0;
   margin: 0;
-  @include body-font;
   background-color: $primary;
 }
 
@@ -26,6 +25,10 @@ a {
   @include transition-timing;
 }
 
+.container-fluid {
+  padding: 0 8%;
+}
+
 section {
   padding-top: 16%;
   display: flex;
@@ -34,26 +37,22 @@ section {
   min-height: 100vh;
 
   .section-heading {
-    @include heading-font;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 40px;
   }
 
   .section-subheading {
-    @include serif-font;
     font-size: 16px;
-    font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
-    padding-right: 2em;
-    padding-left: 2em;
+    padding-right: 5em;
   }
 }
 
 @media (min-width: 768px) {
   section {
-    padding-top: 0;
+    padding-top: 6%;
   }
 }

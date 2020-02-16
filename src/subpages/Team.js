@@ -27,7 +27,7 @@ function Team() {
   `)
   return (
     <section id="team">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-lg-12 text-center">
             <h2 className="section-heading">The Team</h2>

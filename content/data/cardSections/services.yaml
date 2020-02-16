@@ -1,15 +1,16 @@
 order: 1
 id: services
+backgroundGradient: linear-gradient(rgba(33, 37, 41, 0.5), rgba(0, 0, 0, 0.8))
 backgroundImage: images/servicesBackground.jpg
 heading: Technical Services
 subheading: We design software, processes, and infrastructures that get out of the way to let empowered developers and system engineers do what they do best.
-iconItems: 
+cards:
   - title: Development
     icon: code
     description: We'll get your project started on the right foot, help you plan and implement that new feature, or assist your team in resolving that pesky blocker.
   - title: DevOps
     icon: cogs
     description: It's hard to find time to clean up, plan, or implement your CI/CD process when you have deadlines. We'll take care of that for you.
-  - title: Systems
+  - title: CloudOps
     icon: server
-    description: We'll design cost effective, highly available systems to run all of that software and DevOps tooling that we helped you create.
+    description: We'll design a cost effective and resilient infrastructure to run all of that software and DevOps tooling that we helped you create.

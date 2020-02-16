@@ -1,7 +1,7 @@
 // Styling for the footer
 footer {
   @include transition-timing;
-  padding: 8px;
+  padding: 8px 11px;
 
   &.scrolled {
     background: rgba(33, 37, 41, 0.87);
@@ -20,7 +20,6 @@ footer {
   }
 
   span.copyright {
-    @include heading-font;
     display: none;
     font-size: 60%;
     text-transform: none;
@@ -47,6 +46,12 @@ footer {
 
 @media (min-width: 768px) {
   footer {
-    padding: 8px 25px;
+    padding: 8px 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer {
+    padding: 8px 30px;
   }
 }

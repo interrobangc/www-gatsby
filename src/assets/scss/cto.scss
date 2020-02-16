@@ -1,11 +1,6 @@
 #cto {
-  background-color: $gray-200;
-
+  @include sharp-background-fix;
   .section-subheading {
     color: $gray-700 !important;
-  }
-
-  .iconItemIcon {
-    color: $gray-700;
   }
 }

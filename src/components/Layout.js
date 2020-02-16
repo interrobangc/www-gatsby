@@ -2,13 +2,10 @@ import React from "react"
 import { library } from "@fortawesome/fontawesome-svg-core"
 
 import {
-  faChartLine,
   faCode,
   faCogs,
   faEnvelope,
-  faHandshake,
   faServer,
-  faStethoscope,
 } from "@fortawesome/free-solid-svg-icons"
 
 import {
@@ -19,7 +16,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 
 library.add(
-  faChartLine,
   faCode,
   faCogs,
   faDocker,
@@ -27,9 +23,7 @@ library.add(
   faFacebook,
   faGithub,
   faLinkedin,
-  faHandshake,
-  faServer,
-  faStethoscope
+  faServer
 )
 
 export default ({ children }) => <div id="page-top">{children}</div>
