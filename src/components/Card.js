@@ -35,10 +35,12 @@ function IconOrImage({ title, image, imageBackground, icon }) {
 
 function Card({ index, icon, image, title, description }) {
   return (
-    <div className="card border-0">
-      <IconOrImage key={index} title={title} image={image} icon={icon} />
-      <div className="card-body">
-        <p className="card-text">{description}</p>
+    <div class="col-sm-12 col-lg-4 py-2">
+      <div className="card border-0 h-100">
+        <IconOrImage key={index} title={title} image={image} icon={icon} />
+        <div className="card-body">
+          <p className="card-text">{description}</p>
+        </div>
       </div>
     </div>
   )
