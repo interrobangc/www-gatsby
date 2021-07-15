@@ -36,11 +36,11 @@ $brandHoverColor: lighten($primary, 5%);
   }
 
   &.navbar-expanded {
-    background: rgba(33, 37, 41, 0.87);
+    background: rgba(33, 37, 41, 0.97);
   }
 
   &.navbar-shrink {
-    background: rgba(33, 37, 41, 0.87);
+    background: rgba(33, 37, 41, 0.97);
   }
 
   .navbar-nav {
@@ -88,7 +88,7 @@ $brandHoverColor: lighten($primary, 5%);
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background: rgba(33, 37, 41, 0.85);
+      background: rgba(33, 37, 41, 0.97);
 
       .navbar-brand {
         font-size: 1.25em;
